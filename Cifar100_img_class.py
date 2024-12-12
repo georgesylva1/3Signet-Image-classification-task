@@ -8,6 +8,7 @@ import os
 # Load CIFAR-100 class labels
 @st.cache_data
 def load_class_names():
+    import os
     url = "https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz"
     tar_path = tf.keras.utils.get_file("cifar-100-python.tar.gz", url, extract=True)
     meta_file = os.path.join(os.path.dirname(tar_path), 'meta')
@@ -39,7 +40,7 @@ uploaded_file = st.file_uploader("Choose an image file", type=["jpg", "png", "jp
 if uploaded_file:
     # Display the uploaded image
     image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image", use_column_width=True)
+    st.image(image, caption="Uploaded Image", use_container_width=True)
 
     # Preprocess and predict
     with st.spinner("Classifying..."):
