@@ -3,6 +3,7 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import pickle
+import os 
 
 # Load CIFAR-100 class labels
 @st.cache_data
