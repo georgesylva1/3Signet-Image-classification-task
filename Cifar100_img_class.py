@@ -9,7 +9,7 @@ import pickle
 def load_class_names():
     url = "https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz"
     tar_path = tf.keras.utils.get_file("cifar-100-python.tar.gz", url, extract=True)
-    meta_file = tar_path.replace(".tar.gz", "/meta")
+    meta_file = os.path.join(os.path.dirname(tar_path), 'meta')
     with open(meta_file, 'rb') as f:
         data = pickle.load(f, encoding='bytes')
         class_names = [label.decode('utf-8') for label in data[b'fine_label_names']]
