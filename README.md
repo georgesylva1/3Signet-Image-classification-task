@@ -73,7 +73,7 @@ To run the application locally, follow these steps:
 
 3. Run the Streamlit app:
     ```bash
-    streamlit run app.py
+    streamlit run Cifar100.py
     ```
 ---
 
