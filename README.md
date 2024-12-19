@@ -111,15 +111,9 @@ Feel free to contribute to this project! Suggestions, improvements, or bug fixes
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## Acknowledgments
 
-- **CIFAR-100 Dataset**: [Link to CIFAR-100 Dataset](https://www.cs.toronto.edu/~kriz/cifar-100.html)  
+- **CIFAR-100 Dataset**: [Link to CIFAR-100 Dataset]([https://www.cs.toronto.edu/~kriz/cifar-100.html](https://www.cs.toronto.edu/~kriz/cifar.html))
 - **TensorFlow/Keras**: For their amazing deep learning framework and pre-trained models.  
 - **Streamlit**: For providing an easy way to create interactive web apps.  
 ```
