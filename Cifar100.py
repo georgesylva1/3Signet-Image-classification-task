@@ -27,7 +27,7 @@ def load_class_names():
 @st.cache_resource
 def load_model():
     try:
-        model_path = "best_model.keras"  # Ensure this path matches where the model is in your repo
+        model_path = os.path.join(os.path.dirname(__file__), "..", "best_model.keras")
         model = tf.keras.models.load_model(model_path)
         return model
     except Exception as e:
